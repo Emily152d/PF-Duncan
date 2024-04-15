@@ -1,0 +1,208 @@
+*{
+    margin:0 ;
+    padding: 0;
+    font-family: 'Bitter', sans-serif !important;
+    
+}
+html body.intro{
+    h1#sqs-slash-page-header{
+        position: absolute; 
+        top: 40%;
+        left: 50%; 
+        transform: translate(-50%, -50%); 
+        color: white; 
+        text-align: center; 
+        font-size: 125px;
+    }
+    h2#sqs-slash-page-header{
+        position: absolute; 
+        top: 55%; 
+        left: 50%;
+        transform: translate(-50%, -50%); 
+        color: white; 
+        text-align: center; 
+        font-size: 35px;
+    }
+    ul.nav {
+        position: relative;
+        margin-top: 35%;
+        list-style-type: none; 
+        padding: 0;
+        text-align: center; 
+        display: flex;
+    }
+    
+    ul.nav li {
+        display: inline-block; 
+        margin: 0 10px; 
+        margin-right: 2px;
+    }
+    
+    ul.nav a {
+        color: white; 
+        text-decoration: none; 
+        font-size: 25px; 
+    }
+    #carouselExampleSlidesOnly {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1; /* Asegura que esté detrás del contenido */
+    }
+    
+    .carousel-inner {
+        height: 100%;
+    }
+    
+    .carousel-item {
+        height: 100%;
+    }
+}
+
+html body.nosotros{
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    background-position: center; 
+    background-color:#DFCEC0;
+    padding: 0;
+    height: 100%;
+
+.w-100 {
+    width: 119.5% !important;
+        /* height: 13%; */
+    }
+
+    .max-height-300 {
+        max-height: 300px;
+    }
+
+.h1, h1 {
+    font-size: 50px;
+    font-style: none;
+    color: black;
+    position: absolute; 
+    top: 19%;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    text-align: center; 
+
+}
+.card{
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    width: 100%;
+    margin-top: 25%;
+
+}
+
+.card-text{
+    font-size: 17px;
+}
+.translucent-background {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 15px; 
+    padding: 20px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    width: 100%;
+    margin-top: 25%;
+}
+#carouselExampleIndicators{
+    margin-top: 25%;
+}
+.carousel-item{
+    border-radius: 15px; 
+    position: relative;
+}
+.carousel-item img {
+    border-radius: 10px; /* Ajusta el valor según tu preferencia */
+}
+
+.image-container {
+    position: relative;
+}
+
+.btn-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    opacity: 0.8; 
+    font-size: 35px;
+}
+}
+
+html body.comprar{
+
+img {
+        width: 500px;
+        height: 500px;
+    }
+
+    .image-container {
+        position: relative;
+    }
+    
+    .image-container img {
+        width: 150px;
+        height: 150px;
+        display: block;
+    }
+    .container text-center{
+    display: table-cell;
+    vertical-align: middle;
+    }
+    
+    .h3{
+        margin-bottom: 50px;
+    }
+}
+
+html body.register{
+    .registrarse{
+        background-image: url('../img/galeria\ fotos\ con\ mujer.jpg');
+        background-size: cover; 
+        background-repeat: no-repeat; 
+        background-attachment: fixed;
+        background-position: center; 
+    }
+}
+
+html body.contact{
+    
+        background-image: url(../img/otra\ pared\ cuadros.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        .col{
+            position: absolute; 
+            top: 60%; 
+            left: 50%;
+            transform: translate(-50%, -50%); 
+            color: white; 
+            text-align: center; 
+
+        }
+        h1{
+            font-size: 85px;
+            margin-bottom: 5%;
+        }
+        p{
+            font-size: 20px;
+            margin-top: 45px;
+        }
+
+}
