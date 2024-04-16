@@ -5,6 +5,15 @@
     
 }
 html body.intro{
+    @media screen and (max-width: 767px){
+        margin-top: 19%;
+        background-color: black;
+        .w-100 {
+            margin-top: 50%;
+            width: 100% !important;
+        }
+        }
+        
     h1#sqs-slash-page-header{
         position: absolute; 
         top: 40%;
@@ -13,15 +22,10 @@ html body.intro{
         color: white; 
         text-align: center; 
         font-size: 125px;
-    }
-    h2#sqs-slash-page-header{
-        position: absolute; 
-        top: 55%; 
-        left: 50%;
-        transform: translate(-50%, -50%); 
-        color: white; 
-        text-align: center; 
-        font-size: 35px;
+        @media screen and (max-width: 767px){
+            top: 14%;
+            font-size: 30px;
+            }
     }
     ul.nav {
         position: relative;
@@ -42,6 +46,10 @@ html body.intro{
         color: white; 
         text-decoration: none; 
         font-size: 25px; 
+        @media screen and (max-width: 767px){
+            top: 30%;
+            font-size: 13px;
+            }
     }
     #carouselExampleSlidesOnly {
         position: fixed;
@@ -59,6 +67,7 @@ html body.intro{
     .carousel-item {
         height: 100%;
     }
+
 }
 
 html body.nosotros{
@@ -70,6 +79,9 @@ html body.nosotros{
     padding: 0;
     height: 100%;
 
+    @media screen and (max-width: 767px){
+        margin-bottom: 30%;
+        }
 .w-100 {
     width: 119.5% !important;
         /* height: 13%; */
@@ -88,6 +100,10 @@ html body.nosotros{
     left: 50%; 
     transform: translate(-50%, -50%); 
     text-align: center; 
+    @media screen and (max-width: 767px){
+        font-size: 35px;
+        top: 17%;
+        }
 
 }
 .card{
