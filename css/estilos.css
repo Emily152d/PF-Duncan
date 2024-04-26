@@ -1,0 +1,207 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bitter:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bitter:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Bitter', sans-serif !important; }
+
+@media screen and (max-width: 767px) {
+  html body.intro {
+    margin-top: 19%;
+    background-color: black; }
+    html body.intro .w-100 {
+      margin-top: 50%;
+      width: 100% !important; } }
+
+html body.intro img {
+  height: auto; }
+
+html body.intro h1#sqs-slash-page-header {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  font-size: 125px; }
+  @media screen and (max-width: 767px) {
+    html body.intro h1#sqs-slash-page-header {
+      top: 14%;
+      font-size: 30px; } }
+
+html body.intro ul.nav {
+  position: relative;
+  margin-top: 35%;
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+  display: flex; }
+  html body.intro ul.nav li {
+    display: inline-block;
+    margin: 0 10px;
+    margin-right: 2px; }
+    html body.intro ul.nav li a {
+      color: white;
+      text-decoration: none;
+      font-size: 25px; }
+      @media screen and (max-width: 767px) {
+        html body.intro ul.nav li a {
+          top: 30%;
+          font-size: 13px; } }
+
+html body.intro #carouselExampleSlidesOnly {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; }
+
+html body.intro .carousel-inner,
+html body.intro .carousel-item {
+  height: 100%; }
+
+html body.register {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../img/PasilloEsculturas.jpg); }
+  html body.register nav {
+    width: 100%; }
+  html body.register .form-label {
+    font-size: 20px;
+    color: white; }
+  html body.register .row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20%;
+    margin-right: calc(-.5* var(--bs-gutter-x));
+    margin-left: calc(-.5* var(--bs-gutter-x)); }
+  html body.register h1 {
+    color: white;
+    font-size: 70px;
+    font-style: none;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+
+html body.nosotros {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-color: #DFCEC0;
+  padding: 0;
+  height: 100%; }
+  @media screen and (max-width: 767px) {
+    html body.nosotros {
+      margin-bottom: 30%; } }
+  html body.nosotros .w-100 {
+    width: 119.5% !important;
+    height: 100%; }
+  html body.nosotros .max-height-300 {
+    max-height: 300px; }
+  html body.nosotros h1, html body.nosotros .h1 {
+    font-size: 50px;
+    font-style: none;
+    color: black;
+    position: absolute;
+    top: 19%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+    @media screen and (max-width: 767px) {
+      html body.nosotros h1, html body.nosotros .h1 {
+        font-size: 35px;
+        top: 17%; } }
+  html body.nosotros .card {
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    width: 100%;
+    margin-top: 25%; }
+  html body.nosotros .card-text {
+    font-size: 17px; }
+  html body.nosotros .translucent-background {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    width: 100%;
+    margin-top: 25%; }
+  html body.nosotros #carouselExampleIndicators {
+    margin-top: 25%; }
+  html body.nosotros .carousel-item {
+    border-radius: 15px;
+    position: relative; }
+  html body.nosotros .carousel-item img {
+    border-radius: 10px;
+    /* Ajusta el valor según tu preferencia */ }
+  html body.nosotros .image-container {
+    position: relative; }
+  html body.nosotros .btn-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    opacity: 0.8;
+    font-size: 35px; }
+
+html img, body.comprar img {
+  width: 500px;
+  height: 500px; }
+
+html .image-container, body.comprar .image-container {
+  position: relative; }
+
+html .image-container img, body.comprar .image-container img {
+  width: 150px;
+  height: 150px;
+  display: block; }
+
+html .container.text-center, body.comprar .container.text-center {
+  display: table-cell;
+  vertical-align: middle; }
+
+html h3, body.comprar h3 {
+  margin-bottom: 50px; }
+
+html body.contact, body.contact body.contact {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../img/OtraParedCuadros.jpg); }
+
+html .container .row .col, body.contact .container .row .col {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center; }
+  html .container .row .col h1, body.contact .container .row .col h1 {
+    font-size: 100px;
+    margin-bottom: 5%; }
+  html .container .row .col p, body.contact .container .row .col p {
+    font-size: 25px;
+    margin-top: 45px;
+    color: white; }
+  html .container .row .col a, body.contact .container .row .col a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    margin-top: 45px; }

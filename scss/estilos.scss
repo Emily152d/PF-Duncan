@@ -1,0 +1,279 @@
+
+*{
+    margin:0 ;
+    padding: 0;
+    font-family: 'Bitter', sans-serif !important;
+    
+}
+
+html body.intro {
+    @media screen and (max-width: 767px) {
+        margin-top: 19%;
+        background-color: black;
+
+        .w-100 {
+            margin-top: 50%;
+            width: 100% !important;
+        }
+    }
+
+    img{
+        height: auto;
+    }
+    h1#sqs-slash-page-header {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-align: center;
+        font-size: 125px;
+
+        @media screen and (max-width: 767px) {
+            top: 14%;
+            font-size: 30px;
+        }
+    }
+
+    ul.nav {
+        position: relative;
+        margin-top: 35%;
+        list-style-type: none;
+        padding: 0;
+        text-align: center;
+        display: flex;
+
+        li {
+            display: inline-block;
+            margin: 0 10px;
+            margin-right: 2px;
+
+            a {
+                color: white;
+                text-decoration: none;
+                font-size: 25px;
+
+                @media screen and (max-width: 767px) {
+                    top: 30%;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+
+    #carouselExampleSlidesOnly {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1; 
+    }
+
+    .carousel-inner,
+    .carousel-item {
+        height: 100%;
+    }
+}
+html body.register{
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url(../img/PasilloEsculturas.jpg);
+
+nav{
+width: 100%;
+}
+
+
+.form-label{
+    font-size: 20px;
+    color: white;
+}
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20%;
+    margin-right: calc(-.5* var(--bs-gutter-x));
+    margin-left: calc(-.5* var(--bs-gutter-x));
+}
+h1{
+    color: white;
+    font-size: 70px;
+    font-style: none;
+    position: absolute; 
+    top: 25%;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    text-align: center; 
+}
+
+}
+
+html body.nosotros {
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    background-position: center; 
+    background-color: #DFCEC0;
+    padding: 0;
+    height: 100%;
+
+    @media screen and (max-width: 767px){
+        margin-bottom: 30%;
+    }
+
+    .w-100 {
+        width: 119.5% !important;
+        height: 100%
+    }
+
+    .max-height-300 {
+        max-height: 300px;
+    }
+
+    h1, .h1 {
+        font-size: 50px;
+        font-style: none;
+        color: black;
+        position: absolute; 
+        top: 19%;
+        left: 50%; 
+        transform: translate(-50%, -50%); 
+        text-align: center; 
+
+        @media screen and (max-width: 767px){
+            font-size: 35px;
+            top: 17%;
+        }
+    }
+
+    .card {
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        width: 100%;
+        margin-top: 25%;
+    }
+
+    .card-text {
+        font-size: 17px;
+    }
+
+    .translucent-background {
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 15px; 
+        padding: 20px; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        width: 100%;
+        margin-top: 25%;
+    }
+
+    #carouselExampleIndicators {
+        margin-top: 25%;
+    }
+
+    .carousel-item {
+        border-radius: 15px; 
+        position: relative;
+    }
+
+    .carousel-item img {
+        border-radius: 10px; /* Ajusta el valor según tu preferencia */
+    }
+
+    .image-container {
+        position: relative;
+    }
+
+    .btn-center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1; 
+        background-color: rgba(0, 0, 0, 0.5); 
+        color: white; 
+        padding: 10px 20px; 
+        border: none; 
+        border-radius: 5px; 
+        opacity: 0.8; 
+        font-size: 35px;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bitter:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+html, body.comprar {
+    img {
+        width: 500px;
+        height: 500px;
+    }
+
+    .image-container {
+        position: relative;
+    }
+    
+    .image-container img {
+        width: 150px;
+        height: 150px;
+        display: block;
+    }
+
+    .container {
+        &.text-center {
+            display: table-cell;
+            vertical-align: middle;
+        }
+    }
+    
+    h3 {
+        margin-bottom: 50px;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bitter:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+html, body.contact {
+    body.contact {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url(../img/OtraParedCuadros.jpg);    
+    }
+
+    .container {
+        .row {
+            .col {
+                position: absolute;
+                top: 60%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: white;
+                text-align: center;
+
+                h1 {
+                    font-size: 100px;
+                    margin-bottom: 5%;
+                }
+
+                p {
+                    font-size: 25px;
+                    margin-top: 45px;
+                    color: white;
+                }
+                a {
+                    color: white; 
+                    text-decoration: none;
+                    font-size: 25px;
+                    margin-top: 45px;
+                }
+            }
+        }
+    }
+}
