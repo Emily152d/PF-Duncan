@@ -14,6 +14,9 @@
       margin-top: 50%;
       width: 100% !important; } }
 
+html body.intro nav {
+  width: 100%; }
+
 html body.intro img {
   height: auto; }
 
@@ -24,15 +27,15 @@ html body.intro h1#sqs-slash-page-header {
   transform: translate(-50%, -50%);
   color: white;
   text-align: center;
-  font-size: 125px; }
+  font-size: 115px; }
   @media screen and (max-width: 767px) {
     html body.intro h1#sqs-slash-page-header {
       top: 14%;
-      font-size: 30px; } }
+      font-size: 25px; } }
 
 html body.intro ul.nav {
   position: relative;
-  margin-top: 35%;
+  margin-top: 30%;
   list-style-type: none;
   padding: 0;
   text-align: center;
@@ -48,7 +51,8 @@ html body.intro ul.nav {
       @media screen and (max-width: 767px) {
         html body.intro ul.nav li a {
           top: 30%;
-          font-size: 13px; } }
+          font-size: 10px;
+          margin-top: 30px; } }
 
 html body.intro #carouselExampleSlidesOnly {
   position: fixed;
@@ -57,6 +61,13 @@ html body.intro #carouselExampleSlidesOnly {
   width: 100%;
   height: 100%;
   z-index: -1; }
+  @media screen and (max-width: 767px) {
+    html body.intro #carouselExampleSlidesOnly {
+      margin-bottom: 50px;
+      overflow: hidden;
+      width: 400px;
+      /* Tamaño deseado */
+      height: 400px; } }
 
 html body.intro .carousel-inner,
 html body.intro .carousel-item {
@@ -67,8 +78,18 @@ html body.register {
   background-position: center;
   background-repeat: no-repeat;
   background-image: url(../img/PasilloEsculturas.jpg); }
+  @media only screen and (max-width: 600px) {
+    html body.register .left {
+      margin-top: 20px; }
+    html body.register h1 {
+      display: none; } }
   html body.register nav {
     width: 100%; }
+  html body.register .form-label,
+  html body.register .form-control,
+  html body.register .form-select,
+  html body.register .btn {
+    margin-bottom: 10px; }
   html body.register .form-label {
     font-size: 20px;
     color: white; }
@@ -96,13 +117,14 @@ html body.nosotros {
   background-attachment: fixed;
   background-position: center;
   background-color: #DFCEC0;
-  padding: 0;
-  height: 100%; }
+  padding: 0; }
+  html body.nosotros nav {
+    width: 100%; }
   @media screen and (max-width: 767px) {
     html body.nosotros {
       margin-bottom: 30%; } }
   html body.nosotros .w-100 {
-    width: 119.5% !important;
+    width: 100% !important;
     height: 100%; }
   html body.nosotros .max-height-300 {
     max-height: 300px; }
@@ -111,7 +133,7 @@ html body.nosotros {
     font-style: none;
     color: black;
     position: absolute;
-    top: 19%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
@@ -124,13 +146,15 @@ html body.nosotros {
     align-items: center;
     max-width: 100%;
     width: 100%;
-    margin-top: 25%; }
+    margin-top: 25%;
+    margin-bottom: 15%; }
   html body.nosotros .card-text {
-    font-size: 17px; }
+    font-size: 17px;
+    line-height: 1.75; }
   html body.nosotros .translucent-background {
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 15px;
-    padding: 20px;
+    padding: 46px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -143,8 +167,7 @@ html body.nosotros {
     border-radius: 15px;
     position: relative; }
   html body.nosotros .carousel-item img {
-    border-radius: 10px;
-    /* Ajusta el valor según tu preferencia */ }
+    border-radius: 10px; }
   html body.nosotros .image-container {
     position: relative; }
   html body.nosotros .btn-center {
@@ -165,6 +188,9 @@ html img, body.comprar img {
   width: 500px;
   height: 500px; }
 
+html nav, body.comprar nav {
+  width: 100%; }
+
 html .image-container, body.comprar .image-container {
   position: relative; }
 
@@ -180,28 +206,81 @@ html .container.text-center, body.comprar .container.text-center {
 html h3, body.comprar h3 {
   margin-bottom: 50px; }
 
-html body.contact, body.contact body.contact {
+html .btn-center, body.comprar .btn-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  opacity: 0.8;
+  font-size: 35px; }
+
+html .col-md-4, body.comprar .col-md-4 {
+  position: relative; }
+
+@media screen and (max-width: 767px) {
+  html img, body.comprar img {
+    width: 300px;
+    height: 300px; } }
+
+body.contact {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url(../img/OtraParedCuadros.jpg); }
+  background-image: url(../img/Pared.jpg); }
 
-html .container .row .col, body.contact .container .row .col {
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+nav {
+  width: 100%; }
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px; }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.col {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
   color: white;
-  text-align: center; }
-  html .container .row .col h1, body.contact .container .row .col h1 {
-    font-size: 100px;
-    margin-bottom: 5%; }
-  html .container .row .col p, body.contact .container .row .col p {
-    font-size: 25px;
-    margin-top: 45px;
-    color: white; }
-  html .container .row .col a, body.contact .container .row .col a {
-    color: white;
-    text-decoration: none;
-    font-size: 25px;
-    margin-top: 45px; }
+  margin-top: 60px; }
+
+h1 {
+  font-size: 100px;
+  margin-bottom: 5%; }
+
+p {
+  font-size: 25px;
+  margin-top: 45px; }
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  margin-top: 45px; }
+
+@media screen and (max-width: 767px) {
+  body.contact {
+    background-color: black; }
+  .col {
+    margin-top: 30px; }
+  h1 {
+    font-size: 30px; }
+  p {
+    font-size: 20px;
+    margin-top: 20px; }
+  a {
+    font-size: 15px;
+    margin-top: 20px; } }
