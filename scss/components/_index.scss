@@ -1,0 +1,66 @@
+html body.intro {
+    nav {
+        width: 100%;
+    }
+
+    img {
+        height: auto;
+    }
+
+    h1#sqs-slash-page-header {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-align: center;
+        font-size: 40px;
+    }
+    h2{
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-align: center;
+        font-size: 130px;
+    }
+    ul.nav {
+        position: relative;
+        margin-top: 28%;
+        list-style-type: none;
+        padding: 0;
+        text-align: center;
+        display: flex;
+
+        li {
+            display: inline-block;
+            margin: 0 10px;
+            margin-right: 2px;
+
+            a {
+                color: white;
+                text-decoration: none;
+                font-size: 25px;
+            }
+        }
+    }
+
+
+    #carouselExampleSlidesOnly {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+
+
+    .carousel-inner,
+    .carousel-item {
+        height: 100%;
+    }
+
+
+}

@@ -1,0 +1,48 @@
+html body.register {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../img/PasilloEsculturas.jpg);
+
+    nav {
+        width: 100%;
+    }
+
+    .btn-outline-success {
+        --bs-btn-color: black;
+        --bs-btn-border-color: black;
+    }
+
+    .form-label,
+    .form-control,
+    .form-select,
+    .btn {
+        margin-bottom: 10px;
+    }
+
+    .form-label {
+        font-size: 20px;
+        color: white;
+    }
+
+    .row {
+        --bs-gutter-x: 1.5rem;
+        --bs-gutter-y: 0;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 20%;
+        margin-right: calc(-.5* var(--bs-gutter-x));
+        margin-left: calc(-.5* var(--bs-gutter-x));
+    }
+
+    h1 {
+        color: white;
+        font-size: 70px;
+        font-style: none;
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}
